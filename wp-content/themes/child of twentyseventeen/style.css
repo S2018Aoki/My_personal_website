@@ -1,0 +1,28 @@
+/*
+Theme Name: [Shima's 2017 Child Theme]
+Description: Child theme based on twentyseventeen
+Author: Shima Aoki
+Version: 1.0
+Template: twentyseventeen
+*/
+@import url('../twentyseventeen/style.css');
+
+@import url('https://fonts.googleapis.com/css?family=Mrs+Saint+Delafield');
+
+body.has-header-image .site-title, body.has-header-video .site-title, body.has-header-image .site-title a, body.has-header-video .site-title a {
+    color: #ffffff;
+    font-family: 'Mrs Saint Delafield', cursive;
+    text-transform: none;
+    font-size: 75px;
+    font-weight: normal;
+    line-height: 40px;
+}
+
+body {
+	color: #B0B!important;
+}
+body.has-header-image .site-description, body.has-header-video .site-description {
+    color: #fff;
+    opacity: 0.8;
+    font-size: 18px;
+}
