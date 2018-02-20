@@ -11,11 +11,15 @@ Template: twentyseventeen
 
 body.has-header-image .site-title, body.has-header-video .site-title, body.has-header-image .site-title a, body.has-header-video .site-title a {
     color: #ffffff;
-    font-family: 'Mrs Saint Delafield', cursive;
+    /*font-family: 'Mrs Saint Delafield', cursive;*/
     text-transform: none;
     font-size: 75px;
     font-weight: normal;
     line-height: 40px;
+}
+
+h1.site-title a{
+      color: #000000;
 }
 
 body {
