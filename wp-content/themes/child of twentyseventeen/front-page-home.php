@@ -1,7 +1,9 @@
 <?php
 /**
- * The template for displaying home page.
-
+ * Template Name: front-page-home.php
+ *
+ * The front page template file
+ *
  * If the user has selected a static page for their homepage, this is what will
  * appear.
  * Learn more: https://codex.wordpress.org/Template_Hierarchy
@@ -14,18 +16,16 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area-wide">
+<div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 
 		<?php // Show the selected frontpage content.
 		if ( have_posts() ) :
 			while ( have_posts() ) : the_post();
-			//using a new template to load content on home page called notitle-page.php
-
-				get_template_part( 'notitle-page', 'page' );
+				get_template_part( 'template-parts/page/content-home', 'front-page-home' );
 			endwhile;
 		else : // I'm not sure it's possible to have no posts when this page is shown, but WTH.
-			get_template_part( 'notitle-page', 'none' );
+			get_template_part( 'template-parts/post/content-home', 'none' );
 		endif; ?>
 
 		<?php
