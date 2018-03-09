@@ -8,25 +8,30 @@ Template: twentyseventeen
 @import url('../twentyseventeen/style.css');
 
 @import url('https://fonts.googleapis.com/css?family=Mrs+Saint+Delafield');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
 
 body.has-header-image .site-title, body.has-header-video .site-title, body.has-header-image .site-title a, body.has-header-video .site-title a {
-    color: #ffffff;
-    /*font-family: 'Mrs Saint Delafield', cursive;*/
+    color: #e5cfe0;
+    font-family: 'Mrs Saint Delafield', cursive;
     text-transform: none;
     font-size: 75px;
     font-weight: normal;
     line-height: 40px;
 }
 
-h1.site-title a{
-      color: #000000;
+.site-content {
+	color: #2d32ff;
+    background-color: #81b3fd;
+    font-size: 19px;
+    font-family: 'Cormorant Garamond', serif;
 }
 
-body {
-	color: #B0B!important;
-}
 body.has-header-image .site-description, body.has-header-video .site-description {
     color: #fff;
     opacity: 0.8;
     font-size: 18px;
+}
+
+#post-52 .entry-title {
+display: none;
 }
